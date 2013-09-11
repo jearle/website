@@ -1,0 +1,40 @@
+{
+  "name": "website2",
+  "description": "Jesse Earle's personal website.",
+  "version": "0.0.1",
+  "author": "Jesse Earle <earle.jesse@gmail.com>",
+  "contributors": [
+    {
+      "name": "Jesse Earle",
+      "email": "earle.jesse@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "browserify": "*",
+    "brfs": "*",
+    "chokidar": "*",
+    "string": "*",
+    "lodash": "*",
+    "markdown":  "*"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "keywords": [
+    "Objective-C",
+    "JavaScript",
+    "AngularJS",
+    "Node.js",
+    "Developer",
+    "New York, New York",
+    "littlebigberry"
+  ],
+  "repository": "git://github.com/jearle/website",
+  "main": "index",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

@@ -1,0 +1,96 @@
+body {
+	font-family: 'Crimson Text', serif;
+	font-size: 16px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+header {
+	h1 {
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 72px;
+		letter-spacing: 20px;
+		font-weight: 300;
+
+		.first-name {
+			letter-spacing: 21px;
+			margin-left: 9px;
+		}
+
+	}
+
+}
+
+#background {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	.transition(opacity .3s linear);
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		min-height: 100%;
+
+	}
+
+	@media (max-width: 767px) {
+		opacity: .1;
+		
+	}
+
+}
+
+#root {
+	position: relative;
+	z-index: 1;
+	margin-left: 360px;
+	margin-top: 150px;
+	.transition(margin .3s linear);
+	
+	&.row {
+		margin-right: 0;
+
+	}
+
+	@media (max-width: 767px) {
+		margin-left: 0px;
+		margin-top: 0px;
+
+	}
+}
+
+#content {
+	max-width: 560px;
+
+	@media (max-width: 767px) {
+		max-width: none;
+
+	}
+	
+}
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Lobster', cursive;
+// font-family: 'Crimson Text', serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Raleway', sans-serif;

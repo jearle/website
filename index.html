@@ -1,0 +1,56 @@
+<html>
+<head>
+
+	<title>
+		Jesse Earle
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="css/index.less">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Josefin+Sans|Lobster|Crimson+Text|Open+Sans+Condensed:300|Oswald:300|Raleway' rel='stylesheet' type='text/css'>
+
+</head>
+<body ng-app="je">
+	<div id="background">
+		<img src="img/martini_up_olives5.jpg"/>
+	</div>
+
+	<div id="root" ng-controller="Root" class="row">
+
+		<div class="col-xs-12">
+			<header>
+				<h1>
+					<span class="first-name">
+						JESSE 
+					</span>
+					<br>
+					<span class="last-name">
+						EARLE
+					</span>
+				</h1>
+			</header>
+
+			<div id="content" ng-view>
+
+			</div>
+
+			<nav>
+				<ul>
+					<li ng-repeat="title in titles">
+						<a href="#/{{ title }}">
+							{{ title }}
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/less/less-1.4.1.min.js"></script>
+
+	<script type="text/javascript" src="js/bundle.development.js"></script>
+</body>
+</html>
